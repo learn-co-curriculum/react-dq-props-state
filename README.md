@@ -1,3 +1,9 @@
+<!-- TODO:
+ - finish editing this
+ - add what should be discussed first
+ - gut code for students
+-->
+
 # Hog-Props-Intro
 
 In this program, we have three components: `App`, the `MasterHog`, and the
