@@ -4,7 +4,7 @@ import BabyHog from './BabyHog'
 import offspring from './db.js'
 
 
-class MasterHog extends Component {
+export default class MasterHog extends Component {
 
   constructor() {
     super()
@@ -49,5 +49,3 @@ class MasterHog extends Component {
   }
 
 }
-
-export default MasterHog;

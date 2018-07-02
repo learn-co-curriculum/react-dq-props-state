@@ -76,6 +76,11 @@ body {
   display: inline;
 }
 
+.hb-wrap {
+  min-width: 280px;
+  min-height: 200px;
+}
+
 @keyframes Teeter-Totter {
   0% {transform: rotateZ(10deg) translateX(-120px);}
   50% {transform: rotateZ(-10deg) translateX(120px);}

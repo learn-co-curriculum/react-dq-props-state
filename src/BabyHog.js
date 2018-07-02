@@ -10,7 +10,7 @@ const imgMapper = {
   'sun': SunBaby
 }
 
-class BabyHog extends Component {
+export default class BabyHog extends Component {
 
   constructor(props) {
     super(props)
@@ -31,6 +31,7 @@ class BabyHog extends Component {
       <li className="hogbabies">
         <h1>{this.props.name}</h1>
         <h3>Weight: {this.state.weight}</h3>
+        <h3>Hobby: {this.props.hobby}</h3>
         <h4>Eye Color: {this.state.eyeColor}</h4>
           
         <Button name="+" onClick={this.changeWeight}>
@@ -40,10 +41,11 @@ class BabyHog extends Component {
           Decrease Weight
         </Button>
 
-        <img src={imgMapper[this.props.eyeColor]} style={{height: `${this.state.weight}px`}} alt="MasterBlasterJrJr" />
+        <div className="hb-wrap">
+          <img src={imgMapper[this.props.eyeColor]} style={{height: `${this.state.weight}px`}} alt="MasterBlasterJrJr" />
+        </div>
+        
       </li>
     )
   }
 }
-
-export default BabyHog;

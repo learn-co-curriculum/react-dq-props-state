@@ -1,32 +1,27 @@
-<!-- TODO:
- - finish editing this
- - add what should be discussed first
- - gut code for students
--->
+# Exploring Hogs with Props and State
 
-# Hog-Props-Intro
+In this program, we have three components: `App`, `MasterHog`, and `BabyHog`.
 
-In this program, we have three components: `App`, the `MasterHog`, and the
-`BabyHog`. Your job is to display the `MasterHog` with its name, weight, and eye
-color.
+###### `MasterHog`:
 
-In addition, you are to display its three `BabyHog` components with their name,
-weight, and eye color. 
+- Has an eye color that can change via a radio button on the DOM
+- Renders three `BabyHog`s, which inherit its eye color
+- Owns the non-variable data associated with each `BabyHog` via the `offspring` import. This includes their: name, eye color, and hobby. _(Obviously, `MasterHog` gets to name her babies, and they genetically inherit her eye color. Not obviously, `MasterHog` also gets to determine her babies hobbies)_
 
-The `MasterHog` should pass down it's beauteous eye color gene to the `BabyHog`
-components. While a `BabyHog`'s eye color comes from the `MasterHog`, a
-`BabyHog` should be able to change its weight independently.
+###### `BabyHog`:
 
-Additionally, the `MasterHog` should be able to change its eye color, because
-Hogs exhibit absolute genetic transfer, the `MasterHog`'s eye color should
-determine its children's eye color. 
+- Has an eye color received from its parent
+- Has a hobby assigned by its parent
+- Has a name given by its parent
+- Has a variable weight, that can be changed via buttons
 
-Hint: the `App` component already imports the data for the `BabyHog` components.
-You need simply to pass it down as props to the next component in your program
-until you can use it to make BabyHogs.
+
+**Note:** While the `MasterHog` component can change its own eye color via radio buttons, its children can only inherit the eye color of their parent!
+
 
 ## Directions:
-  * Pass the necessary props to the `BabyHog` components
-  * Use the radio buttons provided to alter the eye color the `MasterHog` component
-  * Render the `BabyHog` components and their images based on the eye color of the `MasterHog`
-  * Use state in the `BabyHog` component to change their image heights (a good starting image height is '200px' and 10 is a good amount to increment/decrement by)
+
+- Understanding the data associated with both the `MasterHog` as well as the `BabyHog` components, _plan out_ what data should be kept as state vs. props in each component
+- Make use of the `src/db.js` file (import it!). Don't forget: arrays can be mapped and return JSX!
+- Depending on the `BabyHog` eye color, a different image should be rendered (several are being imported in the `BabyHog` component)
+- While the `changeWeight` method has been implemented in `BabyHog`, it is not 'hooked up' to our component. Make sure the function is invoked so our hogs can grow and shrink when either of the button's are clicked
