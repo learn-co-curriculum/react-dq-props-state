@@ -6,7 +6,7 @@ In this program, we have three components: `App`, `MasterHog`, and `BabyHog`.
 
 - Has an eye color that can change via a radio button on the DOM
 - Renders three `BabyHog`s, which inherit its eye color
-- Owns the non-variable data associated with each `BabyHog`. This includes their: name, eye color, and hobby. _(Obviously, `MasterHog` gets to name her babies, and they genetically inherit her eye color. Not obviously, `MasterHog` also gets to determine their hobbies)_
+- Owns the non-variable data associated with each `BabyHog`. This includes their: name, eye color, and hobby. _(Obviously, `MasterHog` gets to name her babies, and they genetically inherit her eye color. Not obviously, `MasterHog` also gets to determine their hobbies)_ Look inside `src/db.js` to see data defining what the `BabyHog` offspring should "inherit."
 
 ###### `BabyHog`:
 
