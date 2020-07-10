@@ -1,4 +1,4 @@
-# Exploring Hogs with Props and State
+# Discussion Questions: Exploring Props and State Further
 
 In this program, we have three components: `App`, `MasterHog`, and `BabyHog`.
 
